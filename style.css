@@ -1,0 +1,66 @@
+ * {
+    padding: 0;
+    margin: 0;
+   }
+.clearfix {
+    display: block;
+    overflow: auto;
+}
+.header{
+    width: 100%;
+    height: 210px;
+    background-color: #e3173e;
+}
+
+.sectionInner{
+    width: 97%;
+    /* height: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
+.headerLine{
+    width: 100%;
+    height: 12px;
+    background-color: #cfad7e;
+}
+
+.headerSocial{
+    float: left;
+}
+.headerLang{
+    float:right;
+}
+.headerLogo{
+    /* border-bottom: 3px solid #fff; */
+    /* width: 103%; */
+    /* margin-left: -2%; */
+}
+
+.headerLogoEvt{
+    float: left;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    text-transform: uppercase;
+
+}
+.headerLogoEvt::before{
+    display: inline-block;
+    content: '';
+    background: url(img/png/spartakLogo.png) 50% 50% no-repeat;
+    width: 94px;
+    height: 59px;
+    vertical-align: middle;
+}
+.headerLogoArena{
+    float: left;
+    text-transform: uppercase;
+}
+.headerLogoArena::before{
+    display: inline-block;
+    content: '';
+    background: url(img/svg/arenaLogo.svg) 50% 50% no-repeat;
+    width: 50vw;
+    height: 50vw;
+}
