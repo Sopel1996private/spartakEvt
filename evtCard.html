@@ -18,11 +18,9 @@
                     <a href="#"><img src="img/svg/vkIcon.svg" alt="vk" class="headerSocialItem"></a>
                     <a href="#"><img src="img/svg/fbIcon.svg" alt="fb" class="headerSocialItem"></a>
                 </div>
-                <!-- <div class="clearfix"></div> -->
                 <div class="headerLang">
                     <div class="headerLangElement"> <a href="#">РУ</a> / <a href="#">ENG</a></div>
                 </div>
-                <!-- <div class="clearfix"></div> -->
             </div>
             <div class="headerLogo">
                 <div class="headerLogoEvt">
@@ -37,7 +35,22 @@
                     </div>
                     &laquo;открытие арена&raquo;
                 </div>
-                <img src="img/svg/sendMsg.svg" alt="sendMsg" class="sendMsg">
+                <div class="sendMsg">
+                    <img src="img/svg/sendMsg.svg" alt="sendMsg" class="sendMsgImg">
+                    <div class="sendMsgPopUp">
+                        <header class="sendMsgPopUpHeader">свяжитесь с нами</header>
+                        <form action="" class="sendMsgPopUpForm">
+                            <input type="email" name="emailForm" id="emailForm" class="sendMsgPopUpFormEmail"
+                            placeholder="E-mail">
+                            <input type="text" name="titleMsg" id="titleMsg" class="sendMsgPopUpFormTitleMsg"
+                            placeholder="Тема сообщения">
+                            <textarea name="textMsg" id="textMsg" class="sendMsgPopUpformTextMsg"
+                            placeholder="Сообщение"
+                            ></textarea>
+                            <input type="submit" value="отправить" class="sendMsgPopUpFormSubmit">
+                        </form>
+                    </div>
+                </div>
             </div>
             <nav class="headerNavigation">
                 <div class="burderInner">
@@ -102,15 +115,17 @@
             GALLERY
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="footerLogoSpartak">
-            SPARTAK LOGO
-        </div>
-        <div class="footerNavigation">
-            FOOTER NAVIGATION
-        </div>
-        <div class="footerArenaLogo">
-            ARENA LOGO
+                <img src="img/png/spartakLogo.png" class="footerLogoSpartakImg">
+            </div>
+            <nav class="footerNavigation">
+                <li class="footerNavigationItem">Прейскурант</li>
+                <li class="footerNavigationItem">Примеры кейтеринга</li>
+                <li class="footerNavigationItem">Техническое оснащение</li>
+            </nav>
+            <div class="footerArenaLogo">
+                <img src="img/png/arenaLogo.png" class="arenaLogo">
         </div>
     </footer>
 </body>

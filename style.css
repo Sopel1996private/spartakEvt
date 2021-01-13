@@ -47,10 +47,10 @@ html{
     left: 0;
     bottom: 50px;
     width: 100%;
-    border: none; /* Убираем границу */
-    background-color: #fff; /* Цвет линии */
-    color: #fff; /* Цвет линии для IE6-7 */
-    height: 3px; /* Толщина линии */
+    border: none;
+    background-color: #fff;
+    color: #fff;
+    height: 3px;
 }
 .clearfix {
     clear:both;
@@ -141,6 +141,11 @@ html{
     float:right;
     width: 35px;
     height: 25px;
+    position: relative;
+}
+.sendMsgImg{
+    width: 35px;
+    height: 25px;
 }
 
 .headerNavigation{
@@ -153,7 +158,6 @@ html{
 }
 
 .burger{
-    /* float:left; */
     margin-right: 65px;
     width: 20px;
     height: 30px;
@@ -172,4 +176,119 @@ html{
 
 .navElement:hover{
     border-bottom: 5px solid #cfad7e;
+}
+
+.sendMsgPopUp{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    height: 430px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #fff;
+}
+.sendMsgPopUpHeader{
+    border-radius: 5px 5px 0 0;
+    height: 75px;
+    line-height: 75px;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 40px;
+    font-size: 14pt;
+    text-transform: uppercase;
+    background-color: #e3173e;
+    border-bottom: 2px solid #840d2a;
+}
+.sendMsgPopUpForm{
+    padding: 20px 30px;
+}
+.sendMsgPopUpFormEmail{
+    padding-left: 5px;
+    width: 290px;
+    height: 45px;
+    line-height: 14pt;
+    font-size: 14pt;
+    border: 1px solid #d4d6d6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.sendMsgPopUpFormTitleMsg{
+    padding-left: 5px;
+    width: 290px;
+    height: 45px;
+    line-height: 14pt;
+    font-size: 14pt;
+    border: 1px solid #d4d6d6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.sendMsgPopUpformTextMsg{
+    padding: 5px 0 0 5px;
+    width: 290px;
+    height: 100px;
+    line-height: 14pt;
+    font-size: 14pt;
+    resize: none;
+    border: 1px solid #d4d6d6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.sendMsgPopUpFormSubmit{
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 45px;
+    font-size: 14pt;
+    line-height: 14pt;
+    box-shadow: 0px 1px 0px #df6071;
+    border-radius: 5px;
+    color: white;
+    background-color: #e3173e;
+}
+
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #e3173e;
+    background-image: url(img/svg/footerText.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80% 150px;
+    text-align: center;
+
+}
+.footerLogoSpartak{
+    display: inline-block;
+    line-height: 200px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.footerLogoSpartakImg{
+    vertical-align: middle;
+}
+.footerNavigation{
+    display: inline-block;
+    line-height: 200px;
+    vertical-align: middle;
+    text-align: left;
+    list-style: none;
+}
+.footerNavigationItem{
+    display: table;
+    line-height: 30px;
+    font-size: 14pt;
+    border-bottom: 1px solid #fff;
+}
+.footerArenaLogo{
+    display: inline-block;
+    line-height: 200px;
+    vertical-align: middle;
 }
