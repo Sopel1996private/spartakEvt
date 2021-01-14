@@ -185,6 +185,7 @@ html{
 .sendMsgPopUp{
     display:none;
     position: absolute;
+    z-index: 100;
     top: 40px;
     right: 0;
     height: 430px;
@@ -258,6 +259,11 @@ html{
     transform: translate(0, -50%);
     right: 2.5%;
 }
+/* .fancybox-navigation.fancybox-button{
+    width: auto;
+    height: auto;
+} */
+
 .owl-prev{
     background: url("img/svg/navIconPrev.svg") 50% 50% no-repeat;
     background-size: cover;
@@ -265,15 +271,17 @@ html{
     height: 35px;
     outline: none;
     margin-right: 10px;
+    padding:0;
   }
 
-  
+
 .owl-next{
     background: url("img/svg/navIconNext.svg") 50% 50% no-repeat;
     background-size: cover;
     width: 35px;
     height: 35px;
     outline: none;
+    padding:0;
   }
   .owl-prev.disabled,
   .owl-next.disabled{
@@ -396,4 +404,9 @@ html{
     display: inline-block;
     line-height: 200px;
     vertical-align: middle;
+}
+
+
+.active{
+    display:block;
 }
