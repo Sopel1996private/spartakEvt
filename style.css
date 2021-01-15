@@ -284,7 +284,8 @@ html{
     padding:0;
   }
   .owl-prev.disabled,
-  .owl-next.disabled{
+  .owl-next.disabled,
+  .disabled{
       opacity: 0.2;
       /* display: none; */
   }
@@ -307,7 +308,13 @@ html{
     width: 25px;
     height: 25px;
 }
-    
+
+
+.lslide img{
+    width: 100%;
+    height: auto;
+}
+
 /* .owlNav{
     position: absolute;
     top: 50%;
