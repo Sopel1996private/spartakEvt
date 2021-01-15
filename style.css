@@ -292,7 +292,16 @@ html{
 
 
   .mainGallery{
-    margin: 50px 70px 50px 0;
+    margin: 50px 10% 50px 2.5%;
+}
+
+.mainGallery .lSAction {
+    /* position: absolute; */
+    /* top: 50%; */
+    /* right: -2.5%; */
+}
+.mainGallery .lSAction > a{
+    background-image: url('controls2.png'); 
 }
 .owl-carousel-2 .owl-nav{
     right: -80px;

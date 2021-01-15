@@ -83,7 +83,7 @@ $(document).ready(function() {
     ); 
   });
 $(document).ready(function() {
-    $("#lightSlider2").lightSlider(
+    $("#lightgallery").lightSlider(
         {item: 3,
         autoWidth: false,
         slideMove: 1, // slidemove will be 1 if loop is true
@@ -92,6 +92,26 @@ $(document).ready(function() {
         slideEndAnimation: false,}
     ); 
   });
+
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery({
+            loop: false,
+            hideControlOnEnd: true,
+            slideEndAnimatoin: false,
+            download: false,
+            counter: false,
+            thumbnail: false,
+            fullScreen: false,
+            pager: false,
+            zoom: false,
+            actualSize: false,
+            hash: false,
+            share: false,
+            rotate: false,
+            autoplay: false,
+            autoplayControls: false,
+        }); 
+    }); 
 
 const popUp = evt => {
     if(evt.target.classList.contains('sendMsgImg'))

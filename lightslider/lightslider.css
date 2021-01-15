@@ -152,14 +152,19 @@
 /* End of Gallery*/
 
 /* slider actions */
-.lSAction > a {
+    .lSAction {
+        position: absolute;
+        top: 50%;
+        right: 2.5%;
+    }
+    .lSAction > a {
     width: 32px;
     display: block;
-    top: 50%;
+    /* top: 50%; */
     height: 32px;
     background-image: url('controls.png');
     cursor: pointer;
-    position: absolute;
+    /* position: absolute; */
     z-index: 99;
     margin-top: -16px;
     opacity: 0.5;
@@ -171,15 +176,18 @@
 }
 .lSAction > .lSPrev {
     background-position: 0 0;
-    left: 10px;
+    display: inline-block;
+    /* left: 10px; */
 }
 .lSAction > .lSNext {
     background-position: -32px 0;
-    right: 10px;
+    display: inline-block;
+    /* right: 0; */
 }
 .lSAction > a.disabled {
     pointer-events: none;
     opacity: 0;
+    display: none;
 }
 .cS-hidden {
     height: 1px;
