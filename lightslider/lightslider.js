@@ -185,7 +185,7 @@
             },
             controls: function () {
                 if (settings.controls) {
-                    $el.before('<div class="lSAction"><a class="lSPrev">' + settings.prevHtml + '</a><a class="lSNext">' + settings.nextHtml + '</a></div>');
+                    $el.after('<div class="lSAction"><a class="lSPrev">' + settings.prevHtml + '</a><a class="lSNext">' + settings.nextHtml + '</a></div>');
                     if (scene===0){
                         $slide.find('.lSPrev').addClass('disabled');
                     } else if (scene===length-1){
@@ -1105,7 +1105,13 @@
             return sc + 1;
         }; 
         $el.getTotalSlideCount = function () {
-            return $slide.find('.lslide').length;
+
+            var _slideValue = plugin.slideValue();
+            var nextI = _slideValue < w - elSize - settings.slideMargin;
+            
+            // return $slide.find('.lslide').length;
+            return ((length - settings.slideMove) && nextI);
+
         };
         $el.goToSlide = function (s) {
             if (settings.loop) {

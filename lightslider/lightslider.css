@@ -160,11 +160,9 @@
     .lSAction > a {
     width: 32px;
     display: block;
-    /* top: 50%; */
     height: 32px;
-    background-image: url('controls.png');
+    background-image: url('controls.svg');
     cursor: pointer;
-    /* position: absolute; */
     z-index: 99;
     margin-top: -16px;
     opacity: 0.5;
@@ -177,6 +175,7 @@
 .lSAction > .lSPrev {
     background-position: 0 0;
     display: inline-block;
+    margin-right: 5px;
     /* left: 10px; */
 }
 .lSAction > .lSNext {
@@ -187,7 +186,7 @@
 .lSAction > a.disabled {
     pointer-events: none;
     opacity: 0;
-    display: none;
+    pointer-events: none;
 }
 .cS-hidden {
     height: 1px;
